@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: spring-app-ingress
+  namespace: learning
+spec:
+  rules:
+    - host: springtestapp.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: spring-app-svc
+                port:
+                  number: 5001
+            path: /learn-spring
+            pathType: Prefix
