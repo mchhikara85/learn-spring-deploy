@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: spring-app-deployment
+  labels:
+    app: spring-app-deployment
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+          name: spring-app
+          env:
+            name: env2
+            value: value2
