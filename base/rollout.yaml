@@ -5,13 +5,14 @@ metadata:
   labels:
     app: spring-app-deployment
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: spring-app
   strategy:
     blueGreen:
-      activeService:
+      activeService: spring-app-active-svc
+      previewService: spring-app-preview-svc
+      previewReplicaCount: 1
   template:
     metadata:
       name: spring-app
