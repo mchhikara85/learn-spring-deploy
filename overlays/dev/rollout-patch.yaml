@@ -11,5 +11,5 @@ spec:
       containers:
           name: spring-app
           env:
-            name: env2
-            value: value2
+            - name: env2
+              value: value2

@@ -32,8 +32,8 @@ spec:
               mountPath: config/secret
               readOnly: true
           env:
-            name: env1
-            value: value1
+            - name: env1
+              value: value1
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       volumes:
