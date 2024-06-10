@@ -9,6 +9,9 @@ openapi:
 
 namespace: learning
 
+commonLabels:
+  - environment: dev
+
 resources:
   - rollout.yaml
   - service-active.yaml
