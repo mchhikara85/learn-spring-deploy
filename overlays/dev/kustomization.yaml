@@ -11,7 +11,7 @@ resources:
 namespace: learning
 
 commonLabels:
-  - environment: dev
+  environment: dev
 
 images:
   - name: mchhikara/spring-app
