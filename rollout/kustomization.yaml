@@ -10,7 +10,8 @@ openapi:
 namespace: learning
 
 commonLabels:
-  - environment: dev
+  environment: dev
+  testkey: testvalue
 
 resources:
   - rollout.yaml
