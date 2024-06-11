@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - ../../base
-  - rollout-patch.yaml
   - ingress-active.yaml
   - ingress-preview.yaml
   - secret.yaml
@@ -12,6 +11,9 @@ namespace: learning
 
 commonLabels:
   environment: dev
+
+patches:
+  - path: rollout-patch.yaml
 
 images:
   - name: mchhikara/spring-app
