@@ -12,8 +12,8 @@ namespace: learning
 commonLabels:
   environment: dev
 
-patches:
-  - path: rollout-patch.yaml
+patchesStrategicMerge:
+  - rollout-patch.yaml
 
 images:
   - name: mchhikara/spring-app
