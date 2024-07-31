@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spring-app-deployment
 spec:
-  replicas: 2
+  replicas: 0
   template:
     spec:
       containers:
