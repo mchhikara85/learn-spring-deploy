@@ -12,7 +12,7 @@ spec:
     blueGreen:
       activeService: spring-app-active-svc
       previewService: spring-app-preview-svc
-      previewReplicaCount: 0
+      previewReplicaCount: 1
   template:
     metadata:
       labels:
